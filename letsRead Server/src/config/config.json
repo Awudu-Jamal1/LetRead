@@ -1,0 +1,14 @@
+
+{
+  "port":  8081,
+  "development": {
+    "username": "root",
+    "password": "Aragami4",
+    "database": "bookhome",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "authentication": {
+    "jwtSecret":  "secret"
+}
+}
