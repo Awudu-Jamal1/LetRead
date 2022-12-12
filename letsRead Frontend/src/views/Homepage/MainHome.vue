@@ -1,8 +1,8 @@
 <template>
     <div>
         <HomeView v-show="!store.login"/>
-        <LoginHome v-show="store.login"/>
-        {{store.login}}
+        <LoginHome :stores="store.user.userName" v-show="store.login"/>
+        
     </div>
 </template>
 <script>

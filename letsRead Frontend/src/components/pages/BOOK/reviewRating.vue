@@ -1,10 +1,13 @@
 <template>
      <div class="ratin">
-    <h2 class="mb-5">Ratings & reviews</h2>
-      <div class="text-center mb-4">
-        <div class=""><Rating :bookid="bookid"/></div>
-        <p>Rate this book</p>
+    <h2 class="mb-5 text-center ">Ratings & reviews</h2>
+      <div class="d-flex flex-column text-center  justify-content-center   align-self-center mb-4">
+        <div class=" rate align-self-center"><Rating :bookid="bookid"/></div>
+        <div>
+          <p>Rate this book</p>
         <button @click="review({name:'Review', params:{bookid:bookid}})" class="btn btn-dark">Write Review</button>
+       
+        </div>
       </div>
      </div>
 </template>
@@ -21,3 +24,7 @@ export default {
     props:['bookid']
 }
 </script>
+<style scoped>
+
+
+</style>

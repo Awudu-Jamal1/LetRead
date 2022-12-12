@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
 :root{
   --font-color: #4B3869;
   --subtitle-color: #748daa;
@@ -21,11 +23,11 @@
   
   
   /*font-family: 'Roboto Mono', monospace;*/
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 body{
   background-color: var(--back-ground);
-  color:  var(--font-color);
+  color:  black;
   font-size: 16px;
 }
 a{

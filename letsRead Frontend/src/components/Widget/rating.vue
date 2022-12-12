@@ -58,7 +58,7 @@ import { useStore } from '../../store'
     </script>
     <template>
        <div>
-        <fieldset class="rating" v-show="!show">{{radios}}
+        <fieldset class="rating " v-show="!show">{{radios}}
                         <input type="radio" id="star5" v-model="radios" @click="submit(5)" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
                         <input type="radio" id="star4.5" v-model="radios" @click="submit(4.5)" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
                         <input type="radio" id="star4" v-model="radios" @click="submit(4)"  name="rating" value="4"/><label for="star4" class="full"></label>

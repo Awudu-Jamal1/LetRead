@@ -27,7 +27,7 @@ export default {
         }
     },
     setup(){
-        const store =useStore()
+        const store = useStore()
         
     
         return{
@@ -41,33 +41,17 @@ export default {
 
 <template>
     <div  >
-        <div class="mside" style="height:100vh;">
-            <div class="side ">
-                <div class="top">
-                    <a style="margin-bottom:30px;">letsRead</a>
-                    <h1 style="color:#704D69;">Discover the worlds top designers & Creatives.</h1>
-                </div>
-                <div class="mmiddle">
-                    <div class="middle">
-                    
-                </div>
-                <p>Art by <span>Peter Tarka</span></p>
-
-                </div>
-                
-               
-        
-    </div>
-    <div class='side2 me-5 d-flex justify-content-center align-items-center' >
-        <div class="" style="width: 20vw; margin: 50px;">
-            <h3>Sign In to LetRead</h3>
-            <form >
-                <div class="mt-5">
+        <div class="container-fluid mside" >
+         
+    <div class=' side2 me-5 d-flex align-items-center justify-content-center ' >
+        <div class=" Je  ">
+            <h3 class="text-center">Sign In to LetdRead</h3>
+            <form  >
+                <div class="mt-1">
                         <div class="form-group">
-                            <label for="Email">Email or Username</label>
+                            <label for="Email">Email</label>
                             <input id="iput" v-model="login.email" class="form-control">
                         </div>
-                        {{login.email}}
                     </div>
                     <div class="mt-5">
                         <div class="form-group">
@@ -75,14 +59,13 @@ export default {
                             <input id="iput" type="password" v-model="login.password" class="form-control">
                         </div>
                     </div>
-<div class="mt-5" ><button @click.prevent="Login" class="btns"> SignIn</button></div>
-                
+<div class=" mt-1 text-center" ><button @click.prevent="Login" class="btns"> SignIn</button></div>
+<div class="side3 p-4">
+        <p>Not a member? <a href="/session/new">Sign Up</a></p>
+    </div>
             </form>
         </div>
 
-    </div>
-    <div class="side3 p-4">
-        <p style="font-size:16px;">Not a member? <a href="/session/new">Sign Up</a></p>
     </div>
         </div>
     
@@ -90,9 +73,12 @@ export default {
 </template>
 
 <style scoped>
-  label{
+ label{
     font-size: 16px;
     font-weight:bold;
+  }
+  h3{
+    margin-bottom: 48px;
   }
     
     .mside{
@@ -101,47 +87,27 @@ export default {
         
     }
     
-.side{
-    flex: 1;
-    background: #A49DAB;
-    height:100%;
-    width:514px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .side2{
-    flex: 3;
+  min-height: 70vh;
+    padding: 20px;
+    height: auto;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%; 
+}
+.Je{
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+    padding: 40px;
+    margin-bottom: 10px;
+    min-width: 100px;
+    max-width: 380px;
 }
 #iput{
     border: 1px solid transparent;
     background-color: #f3f3f4;
-}
-
-.top{
-    padding: 64px 64px 30px;
-    max-width: 100%;
-    text-align: left;
-}
-.middle{
-    background-image: url("../assets/image 3.png" );
-    flex-grow: 1;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-}
-.mmiddle{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: flex-end;
-}
-.mmiddle p{
-    margin: 0;
-    padding: 25px 64px 35px;
-    color: inherit;
-    font-size: 14px;
-    line-height: 14px;
 }
 
 .btns {
@@ -160,5 +126,6 @@ export default {
 .btns:hover{
     background-color: #004346;
 }
+
 
 </style>

@@ -32,18 +32,16 @@ module.exports = {
       res.status(500).send({
         error: "server error",
       });
-      console.log(error);
     }
   },
 
   async login(req, res) {
     try {
-      console.log(req.body);
       const { email, password } = req.body;
       const user = await User.findOne({
         where: { email: email },
       });
-
+      console.log(user)
       if (!user) {
         return res.status(403).send({
           error: "incorrect Email",
@@ -52,6 +50,7 @@ module.exports = {
       const Isvalidate = await bcrypt.compare(password, user.password);
 
       if (!Isvalidate) {
+        console.log("Error", Isvalidate)
         return res.status(403).send({
           error: "wrong Password",
         });

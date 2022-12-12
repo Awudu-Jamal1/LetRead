@@ -1,26 +1,101 @@
 <template>
-    <div class="mt-4">
-        <h5>UPDATES</h5>
-        <div class="card" style="width:15cm">
-  <div class="card-header d-flex justify-content-between">
-    <div>
-        <img style="100px" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502157764i/29895088._SX120_.jpg" alt="">
-    <p class="mt-5">Like. Comment</p>
+  <div class="mains">
+    <div class="mb-2">Mike Rampazzo rated rate star</div>
+    <div class="d-flex ">
+        <div class=""><img src="https://media.anobii.com/covers/01cd1924e448e527fe/130/201/1/paperback/webp/1471611530" alt="">
+      </div>
+        <div class="mx-5">
+            <P style="font-size:1.5rem;">Name of Book</P>
+            <p style="font-size:1.2rem; line-height: 2px; color: #e07a5f;">Name of Author</p>
+            <p class="rate">Rating</p>
+            <div class="d-flex align-item-baseline">
+                <div class="number"><p style="font-size:1.2rem;  color: #e07a5f;">235</p><p>Have it in  library</p></div>
+                <div class="number"><p style="font-size:1.2rem; color: #e07a5f;">235</p><p >Have it in their library</p></div>
+                <div class="number numB"><p style="font-size:1.2rem; color: #e07a5f;">235</p><p >Have it in their library</p></div>
+
+            </div>
+        </div>
     </div>
-    <div class="mx-4">
-        <h5>Interactive Data Visualization for the Web: An Introduction to Designing with D3</h5>
-    <p>by Scoot Murry</p>
-    <button class="btn btn-primary">Want to Read</button> <span>Rate it:</span>
-<div>
-    Create and publish your own interactive data visualization projects on the web--even if you have little or no experience with data visualization or web development. It's inspi…
-<span>continue reading</span>
-</div>    
-</div>
+    <div>  <p>31 Minutes ago</p></div>
   </div>
-  <div class="card-body d-flex" >
-   <div><img style="height:30px;" src="https://s.gr-assets.com/assets/nophoto/user/u_60x60-267f0ca0ea48fd3acfd44b95afa64f01.png" alt=""></div>
-<div class="align-self-center"><input style="width:10cm;" type="text" placeholder="Write a comment"></div>  
-</div>
-</div>
+
+
+
+
+
+
+  <div class="mains">
+    <div class="mb-2">Mike Rampazzo rated rate star</div>
+    <div class="d-flex ">
+        <div class=""><img src="https://media.anobii.com/covers/01cd1924e448e527fe/130/201/1/paperback/webp/1471611530" alt="">
+      </div>
+        <div class="mx-5">
+            <P style="font-size:1.5rem;">Name of Book</P>
+            <p style="font-size:1.2rem; line-height: 2px; color: #e07a5f;">Name of Author</p>
+            <p class="rate">Rating</p>
+            <div class="d-flex align-item-baseline">
+                <div class="number"><p style="font-size:1.2rem;  color: #e07a5f;">235</p><p>Have it in  library</p></div>
+                <div class="number"><p style="font-size:1.2rem; color: #e07a5f;">235</p><p >Have it in their library</p></div>
+                <div class="number numB"><p style="font-size:1.2rem; color: #e07a5f;">235</p><p >Have it in their library</p></div>
+
+            </div>
+        </div>
     </div>
+    <div>  <p>31 Minutes ago</p></div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="mains">
+    <div class="mb-2">Mike Rampazzo rated rate star</div>
+    <div class="d-flex ">
+        <div class=""><img src="https://media.anobii.com/covers/01cd1924e448e527fe/130/201/1/paperback/webp/1471611530" alt="">
+      </div>
+        <div class="mx-5">
+            <P style="font-size:1.5rem; font: 700;">Name of Book</P>
+            <p style="font-size:1.2rem; line-height: 2px; color: #e07a5f;">Name of Author</p>
+            <p class="rate">Rating</p>
+            <div class="d-flex align-item-baseline">
+                <div class="number"><p style="font-size:1.2rem;  color: #e07a5f;">235</p><p>Have it in  library</p></div>
+                <div class="number"><p style="font-size:1.2rem; color: #e07a5f;">235</p><p >Have it in their library</p></div>
+                <div class="number numB"><p style="font-size:1.2rem; color: #e07a5f;">235</p><p >Have it in their library</p></div>
+
+            </div>
+        </div>
+    </div>
+    <div>  <p>31 Minutes ago</p></div>
+  </div>
+
+
+
+
 </template>
+
+<style scoped>
+.mains{
+    font-size: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+}
+.number{
+ padding-left: 15px;
+    padding-right: 10px;
+    margin-right:5px;
+    border-right: 1px solid black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+.numB{
+    border-right: none;
+}
+.rate{
+    padding-bottom: 15px;
+}
+</style>
