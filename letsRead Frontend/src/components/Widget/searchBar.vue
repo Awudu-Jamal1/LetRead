@@ -35,7 +35,7 @@ export default {
       aria-label="Search"
       v-model="search"
     />
-    <div class="resultBar text-center">
+    <div class="resultBar ">
       <div class="resultz" v-for="(result, i) in results" :key="i">
         <a
           :href="
@@ -55,23 +55,26 @@ export default {
         </a>
       </div>
 
-      <a style="height: 75px" class="a" v-show="show"
+      <a style="height: 75px" class="a text-center " v-show="show"
         >Show all results "{{ search }}"</a
       >
     </div>
   </form>
 </template>
 <style scoped>
-#a {
+
+#a {padding-bottom: 30px;
   font-size: 12px;
   text-decoration: none;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   overflow: hidden;
-  height: 55px;
-  padding: 8px;
-  padding-right: 16px;
+  height: 70px;
+ padding-top: 10px;
+  padding-left: 16px;
   color: #333333;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f1f1f1;;
+  
+  
 }
 img {
   flex-shrink: 0;
@@ -81,15 +84,19 @@ img {
 }
 .resultBar {
   position: absolute;
-
-  background: white;
   position: absolute;
   width: 100%;
   z-index: 70;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+  
+  background-color: #fff;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+    border: 1px solid #f1f1f1;
 }
 .a {
   font-size: 15px;
   cursor: pointer;
+  padding-left: 80px;
+}
+.resultz{
 }
 </style>

@@ -12,5 +12,8 @@ export default {
   },
   changeP(passwords){
     return Api().put('/account/password',passwords)
+  },
+  show(user){
+    return Api().get('/account', {params:{user:user}})
   }
 }

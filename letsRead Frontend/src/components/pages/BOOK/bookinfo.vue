@@ -1,5 +1,5 @@
 <template>
-<div class="container ">
+<section><div class="container ">
     <div><p class="bname" >{{book.title}}</p>
     <p class="bauthor">By <span >{{book.author}}</span></p></div>
     </div>    
@@ -32,7 +32,7 @@
 </div>
 <div>
     <Reviews-box :bookid ="book.ids"/>
-</div>
+</div></section>>
 </template>
 <script>
 import rated from '../../Widget/rated.vue'

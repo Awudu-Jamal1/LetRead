@@ -14,7 +14,7 @@
           <a id="nav" class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Browse
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu menus">
          <GenreCard/>
          </ul>
         </li>
@@ -101,6 +101,11 @@ export default {
   }
   .login:hover{
     color: var(--subtitle-color);
+  }
+  .menus{
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
   }
 
 </style>

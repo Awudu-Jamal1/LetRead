@@ -36,7 +36,7 @@ export default {
                 <div class="d-flex justify-content-around flex-wrap ">
                     <div class="genre-img mb-3" v-for="(book,i) in books" :key="i">
                         <router-link class="text-decoration-none" :to="{name: 'Book', params: { bookId: book.id }}">
-                            <img :src="book.img_Url" alt=""></router-link>
+                            <img class="img-fluid" :src="book.img_Url" alt=""></router-link>
                     </div>
 
                 </div>
@@ -58,7 +58,7 @@ export default {
                 
             </div>
             <hr>
-            <div>
+            <div class="mb-4">
                 <h5 class="semi-title">
                     {{genre.name}} BOOKS
                 </h5>
@@ -153,7 +153,17 @@ export default {
 .rightContainer{
     float: left;
     width: 300px;
-    display: inline;
+    /*display: inline;*/
     margin-left: 8px;
+}
+
+@media only screen and (max-width: 750px) {
+    .rightContainer{
+    float: none;
+    width: 500px;
+    padding-left: 100px;
+    /*display: inline;*/
+    /*margin-left: 8px;*/
+}
 }
 </style>

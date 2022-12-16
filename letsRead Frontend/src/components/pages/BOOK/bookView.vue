@@ -1,4 +1,4 @@
-<template>
+<template> 
    <div class="container-fluid">
     <div class="container">
       <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">

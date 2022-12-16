@@ -1,6 +1,7 @@
 const { review } = require("../models");
 module.exports={
     async post(req,res){
+       
         try{
 const reviews =await review.create(req.body)
 console.log(reviews.toJSON())

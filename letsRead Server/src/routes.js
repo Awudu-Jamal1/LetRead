@@ -5,6 +5,7 @@ const rating = require('./controller/rating')
 const review= require('./controller/review')
 const readlist= require('./controller/readlist')
 const authentication = require('./policies/authentication')
+const fellower = require('./controller/fellower')
 
 
 
@@ -32,6 +33,8 @@ module.exports=(app)=>{
     account.update)
     app.put("/account/password",
     account.changeP)
+    app.get("/account",
+    account.show)
 
     //ratings
     app.post("/review/ratings",
@@ -52,4 +55,7 @@ module.exports=(app)=>{
     readlist.show)
     app.delete("/review/readlist",
     readlist.delete)
+
+    //felllow
+    app.post("/user/fellow",fellower.fellow)
 }

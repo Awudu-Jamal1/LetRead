@@ -108,4 +108,13 @@ module.exports = {
     }
     
   },
+  async show(req,res){
+    let user =req.query.user
+    console.log(user)
+    try{
+      let userInfo = await User.findByPk(user)
+      console.log(userInfo)
+      res.send(userInfo)
+    }catch(error){}
+  }
 };

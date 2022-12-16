@@ -13,8 +13,8 @@
             <p class="author">by Noami Alderin</p>
           </div>
     </li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item"><router-link :to="{name: 'user', params: { userId: 5 }}"> Find</router-link></li>
+    
   </ul>
 
 </div>
@@ -43,3 +43,13 @@ height: 180px;
   line-height: 2px;
 }
 </style>
+
+
+<script>
+export default {
+  setup() {
+    
+  },
+ 
+}
+</script>

@@ -82,6 +82,7 @@ export default {
 label {
   font-size: 16px;
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
 #iput {

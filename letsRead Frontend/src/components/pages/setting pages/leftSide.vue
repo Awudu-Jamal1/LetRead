@@ -10,12 +10,29 @@
 </template>
 
 <style scoped>
+a{
+  text-decoration: none;
+  transition: all ease ;
+}
+
+a:hover{
+  color: #fff;
+}
+
 ul {
   list-style: none;
   font-size: 16px;
 }
-li {
+li {margin-right: 25px;
+  padding-top:5px ;
+  padding-bottom: 5px;
+  padding-left: 25px;
   cursor: pointer;
+  transition: all ease 0.5s;
+}
+li:hover{
+  background:  #e48d8b;
+  color: #fff;
 }
 
 .profile img {

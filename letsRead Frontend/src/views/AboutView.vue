@@ -56,8 +56,6 @@
    </div>
    <hr>
    <ReviewsBox/>
-  
-
    </div>
   </div>
 </template>

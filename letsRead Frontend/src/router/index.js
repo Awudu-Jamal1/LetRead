@@ -11,6 +11,7 @@ import PasswordS from "../views/settings/password.vue"
 import Book from "../components/pages/BOOK/bookView.vue"
 import Text from "../views/enter/feed.vue"
 import Review from "../components/pages/review/reviewPage.vue"
+import User from "../components/pages/User/user.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -87,7 +88,15 @@ const router = createRouter({
     {
       path: "/search",
       name: "search"
-    },
+    },{
+      path: "/user/show/:userId",
+      name: "user",
+      component: User,
+    },{
+      path: "/user/fellow",
+      name: "users",
+    
+    }
   ],
 });
 

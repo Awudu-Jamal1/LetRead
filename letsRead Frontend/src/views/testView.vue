@@ -1,128 +1,190 @@
-<script>
-export default {
-    setup() {
-        
-    },
-    data(){
-        return{
-            radios:"",
-            color:"15%"
-        }
-    }
-}
-</script>
 <template>
-   <div>{{radios}}
-    <fieldset class="rating">
-					<input type="radio" id="star5" v-model="radios"  name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
-					<input type="radio" id="star4.5" v-model="radios"  name="rating" value="4.5"/><label for="star4.5" class="half"></label>
-					<input type="radio" id="star4" v-model="radios"  name="rating" value="4"/><label for="star4" class="full"></label>
-					<input type="radio" id="star3.5" v-model="radios"  name="rating" value="3.5"/><label for="star3.5" class="half"></label>
-					<input type="radio" id="star3" v-model="radios"  name="rating" value="3"/><label for="star3" class="full"></label>
-					<input type="radio" id="star2.5" v-model="radios"  name="rating" value="2.5"/><label for="star2.5" class="half"></label>
-					<input type="radio" id="star2" v-model="radios"  name="rating" value="2"/><label for="star2" class="full"></label>
-					<input type="radio" id="star1.5" v-model="radios"  name="rating" value="1.5"/><label for="star1.5" class="half"></label>
-					<input type="radio" id="star1" v-model="radios"  name="rating" value="1"/><label for="star1" class="full"></label>
-					<input type="radio" id="star0.5" v-model="radios" name="rating" value="0.5"/><label for="star0.5"  class="half"></label>
-				</fieldset>
-
-                <div class="stars-outer">
-            <div style="" class="stars-inner " id="nice"></div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="d-flex container info-container justify-content-center">
+        <div class="profile border"></div>
+        <div class="container info mx-5">
+          <div class="mb-3 name"><h3>Awudu Jamal</h3></div>
+          <div class="fellow"><button>Fellow</button></div>
+          <div class=" detail">
+            <div class="d-flex justify-content-between ">
+          <div ><h6>Detail</h6></div>
+          <div class=""><p>Age hhjkk</p></div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div ><h6>Activity</h6></div>
+            <div><p>Readingddd</p></div>
+            </div>
           </div>
-   
-   </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="content mt-5 ">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+          <div class="col  middle">
+            <div class="fav mb-5">
+              <h6 class="text-center">MEGAN;S Favourite Books</h6>
+              <div class="d-flex justify-content-center favs">
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+                <div class=""><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1439049792l/17174._SY75_.jpg" alt=""></div>
+              </div>
+              <div><p class="text-right">More</p></div>
+            </div>
+            <div class=" stats">
+              <h6>Currently Reading</h6>
+              <div class="container d-flex justify-content-around"><div><p>read <span>5</span></p></div>
+              <div><p>read <span>5</span></p></div>
+              <div><p>read <span>5</span></p></div>
+              <div><p>read <span>5</span></p></div>
+            </div>
+            </div>
+
+
+
+            <div class="currently mt-5">
+              <h6>MEGAN IS CURRENTLY READING</h6>
+              <div class="c-info">
+                <div class="row row-cols-1  row-cols-sm-1 row-cols-md-2 g-2">
+                  <div class="col d-flex "><div class="pe-3"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389104900l/20482728._SX98_.jpg" alt=""></div>
+                  <div class="pt-2"><p><span class="person">Megan</span> is currently reading</p>
+                  <h4>The Tibetan Book of the Dead</h4>
+                <p class="author">by <span>Padmasambhava</span></p>
+                <p class="date">- Apr - 17,2022 04:17</p></div>
+             
+                </div>
+                <div class="col container-fluid pt-2 r-buttom">
+                  <button>Want to read</button>
+                  <p>Rate this book</p>
+                </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col right ">
+            <h6><span>Megan</span> Friends</h6>
+            <div>
+              <div class="d-flex">
+                <div><img src="https://images.gr-assets.com/users/1654273379p2/149839351.jpg" alt=""></div>
+<div><p class="e" >Hannah Boundy</p>
+<p ><span>357</span> books | <span>15</span>friends</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
 </template>
 <style scoped>
-@import "https://use.fontawesome.com/releases/v5.0.13/css/all.css";
-#nice{
-    width:v-bind(color)
-
+.e{
+  margin-top: 8px;
+  line-height: 2px;
 }
-.stars-outer {
-  position: relative;
-  display: inline-block;
+.right{
+  width: 300px;
+  font-size: 0.7rem;
 }
-
-.stars-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-}
-
-.stars-outer::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #ccc;
-}
-
-.stars-inner::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #f8ce0b;
-}
-/************************ */
-#rating-value{	
-	width: 110px;
-	margin: 40px auto 0;
-	padding: 10px 5px;
-	text-align: center;
-	box-shadow: inset 0 0 2px 1px rgba(46,204,113,.2);
-}
-
-/*styling star rating*/
-.rating{
-	border: none;
-	float: left;
-}
-
-.rating > input{
-	display: none;
-}
-
-.rating > label:before{
-	content: '\f005';
-	font-family: 'Font Awesome 5 free';
-	margin: 5px;
-	font-size: 1.5rem;
-	display: inline-block;
-	cursor: pointer;
-}
-
-.rating > .half:before{
-	content: '\f089';
-	position: absolute;
-	cursor: pointer;
+.right img{
+  height: 64px;
+  margin-right: 5px;
 }
 
 
-.rating > label{
-	color: #acc;
-	float: right;
-	cursor: pointer;
-    font-weight: 900;
+/*Middle*/
+.currently img{
+  height: 100px;
+}
+.r-buttom{
+  text-align: center;
+  padding-left: 150px;
+}
+.currently button{
+  width: 150px;
+  font-size: 0.9rem;
+  background: green;
+  color: White;
+  border: none;
+  height: 35px;
+}
+.currently h4{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2px;
+}
+.c-info{
+  font-size: 0.8rem;
+}
+.middle h6,.right h6{
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-bottom: 1px solid #f1f1f1;
+
+}
+.middle{
+  width: 800px;
+  padding-left: 110px;
 }
 
-.rating > input:checked ~ label,
-.rating:not(:checked) > label:hover, 
-.rating:not(:checked) > label:hover ~ label{
-	color: #f8ce0b;
-    font-weight: 900;
+.fav img{
+  height: 90px;
+  padding: 4px;
 }
-
-.rating > input:checked + label:hover,
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label,
-.rating > input:checked ~ label:hover ~ label{
-	color: #f8ce0b;
-    font-weight: 900;
+.info-container{
+  min-width: 600px;
 }
 
 
+
+.name{
+  padding-left: 5px;
+  border-bottom: 1px solid #f1f1f1;
+  max-width: 500px;
+  min-width: 300px;
+ 
+}
+.fellow button{
+  width: 120px;
+  height: 40px;
+  font-size: 1rem;
+  background: #e07a5f;;
+  color: #fff;
+  border: none;
+}
+.profile{width: 250px;
+height: 250px;
+min-width: 180px;}
+.info{
+  padding-top: 20px;
+  max-width: 700px;
+}
+.detail{
+  padding-top:20px ;
+  max-width: 200px;
+  font-size: 0.9rem;
+}
+.detail h6{
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #e07a5f;
+}
 
 </style>
-

@@ -55,18 +55,18 @@ export default {
         </span>
       </a>
       <div class="dropdown-menu" style="position: absolute;" id="dlist">
-        <div>{{ name }}</div>
-        <hr>
+        <div class="ab">{{ name }}</div>
+        
         <div>
-            <div><a>Profile</a></div>
-            <div> <a href="/account/profile">Edit Profile</a></div>
+            <div class="ab"><a>Profile</a></div>
+            <div class="ab"> <a href="/account/profile">Edit Profile</a></div>
            
         </div>
-        <hr />
-        <div>
+      
+        <div class="ab">
             <a href="/account">Account Settings</a>
         </div>
-        <div><a @click="logout">Sign Out</a></div>
+        <div class="ab"><a @click="logout">Sign Out</a></div>
       </div>
     </div>
   </div>
@@ -99,19 +99,30 @@ span {
 }
 #dlist {
     font-size: 14px;
-  list-style-type: circle;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 10px;
-
-  background-color: #ffffff;
+padding-top: 15px;
+padding-bottom:10px ;
   position: absolute;
   z-index: 70;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+  background-color: #fff;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+    border: 1px solid #f1f1f1;
 }
 a {
   cursor: pointer;
+  text-decoration: none;
+  transition: ease 0.1s ;
+}
+a:hover{
+  color: #fff;
+}
+.ab{padding-top: 8px;
+  padding-bottom:8px ;
+  padding-left: 8px;
+background: #ffffff;
+transition: ease 0.8s;
+}
+.ab:hover{
+  color:#fff;
+background: #e48d8b;
 }
 </style>
