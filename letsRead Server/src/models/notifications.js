@@ -14,13 +14,12 @@ module.exports = (sequelize, DataTypes) => {
       notifications.belongsTo(models.User,{
         foreignKey:'user_id'
       })
-notifications.belongsTo(models.User,{
-  foreignKey:'fellower_id'
-})
     }
   }
   notifications.init({
+    Message: DataTypes.STRING,
     status: DataTypes.STRING,
+   
   }, {
     sequelize,
     modelName: 'notifications',

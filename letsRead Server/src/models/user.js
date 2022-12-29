@@ -17,6 +17,12 @@ module.exports = (sequelize, DataTypes) => {
       User.hasMany(models.Rating,{
         foreignKey:'user_id'
       })
+      User.hasMany(models.notifications,{
+        foreignKey:'user_id'
+      })
+      User.hasMany(models.post,{
+        foreignKey:'user_id'
+      })
     }
   }
   User.init({

@@ -1,8 +1,7 @@
 <template>
     <div>
         <HomeView v-show="!store.login"/>
-        <LoginHome :stores="store.user.userName" v-show="store.login"/>
-        
+        <div v-show="store.login"><LoginHome  /></div>
     </div>
 </template>
 <script>

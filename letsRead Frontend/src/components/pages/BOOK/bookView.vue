@@ -4,7 +4,7 @@
       <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
         <div class="col  text-center img-container">
           <div class="mb-4"> <img class="img-fluid"  :src="book.img_Url"/></div>
-          <button class="firstBtn">Want To Read</button>
+        <AddButton :bookid ="ids"/>
         </div>
         <div class="col borders">
           <Bookinfo :rate ="rating" :book="book"/>

@@ -101,7 +101,8 @@ export default {setup(){
                 title: this.title,
                 body:this.reviews,
                 user_id:this.store.user.id,
-                book_id:this.bookin
+                book_id:this.bookin,
+                status:"review"
             })
 
         }

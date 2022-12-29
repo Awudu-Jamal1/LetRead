@@ -19,7 +19,6 @@ module.exports = {
       const { firstName, userName, email, password } = req.body;
       const salt = await bcrypt.genSalt(10);
       const pass = await bcrypt.hash(password, salt);
-      console.log(userName);
       const account = await User.create({
         firstName: firstName,
         userName: userName,

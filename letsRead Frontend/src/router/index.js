@@ -96,6 +96,12 @@ const router = createRouter({
       path: "/user/fellow",
       name: "users",
     
+    },{
+      path: "/post/show",
+      name: "post",
+    },{
+      path: "/notify/show",
+      name: "notify",
     }
   ],
 });

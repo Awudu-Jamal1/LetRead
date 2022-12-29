@@ -55,18 +55,15 @@ Don't have people to read with? We’ve got machine learning-powered suggestions
 <script>
 import BookList from "../../services/BookList";
 import FooterView from "../../components/Widget/FooterView.vue";
-import BookCard from "../../components/Widget/bookCard.vue";
+
 import BookSlider from "../../components/Widget/bookSlider.vue";
-import SignUpCard from "../../components/Widget/signUpCard.vue";
-import SearchBar from "../../components/Widget/searchBar.vue";
-import GenreCard from "../../components/Widget/genreCard.vue";
-import Navdesign from "../../components/Widget/navdesign.vue";
+
 
 export default {
   async mounted() {
     this.books =  ((await BookList.index()).data).slice(1,10);
    this.sList = ((await BookList.index()).data).slice(11,20);
-    console.log(this.sList);
+ 
   },
   data() {
     return {

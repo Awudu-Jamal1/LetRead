@@ -13,7 +13,7 @@
             <p class="author">by Noami Alderin</p>
           </div>
     </li>
-    <li class="list-group-item"><router-link :to="{name: 'user', params: { userId: 5 }}"> Find</router-link></li>
+    <li class="list-group-item"><router-link to="/"> Find</router-link></li>
     
   </ul>
 

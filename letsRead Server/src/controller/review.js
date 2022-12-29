@@ -1,10 +1,18 @@
-const { review } = require("../models");
+const { review ,post} = require("../models");
 module.exports={
     async post(req,res){
        
         try{
-const reviews =await review.create(req.body)
-console.log(reviews.toJSON())
+            const {title,body,user_id,book_id,status} = req.body
+const reviews =await review.create({title: ttitle,
+                body:body,
+                user_id:user_id,
+                book_id:book_id})
+const posting = await post.create({user_id:user_Id,
+    book_id:book_Id,
+    status: status,
+    message:body})
+//console.log(reviews.toJSON())
         }
         catch(error){
 console.log(error)

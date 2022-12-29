@@ -9,7 +9,7 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 justify-self-center">
           <li><router-link to="" id="nav" class="nav-link px-2 text-secondary">Home</router-link></li>
-          <li><router-link to="/review/list" id="nav" class="nav-link px-2 text-dark">My Books</router-link></li>
+          <li><router-link to="/review/readlist" id="nav" class="nav-link px-2 text-dark">My Books</router-link></li>
           <li class="nav-item dropdown">
           <a id="nav" class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Browse

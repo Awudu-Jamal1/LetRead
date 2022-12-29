@@ -14,7 +14,9 @@ export default {
         async addBook(){
             await Bookmarking.post({
                 UserId:this.store.user.id,
-                BookId:this.bookid
+                BookId:this.bookid,
+                status: 'added',
+                message:"Interested in reading"
             })
         }
     }

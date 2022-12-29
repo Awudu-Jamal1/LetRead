@@ -6,6 +6,8 @@ const review= require('./controller/review')
 const readlist= require('./controller/readlist')
 const authentication = require('./policies/authentication')
 const fellower = require('./controller/fellower')
+const posts = require('./controller/posts')
+const notify = require('./controller/notify')
 
 
 
@@ -57,5 +59,13 @@ module.exports=(app)=>{
     readlist.delete)
 
     //felllow
-    app.post("/user/fellow",fellower.fellow)
+    app.post("/user/fellow",fellower.post)
+    app.delete("/user/fellow",fellower.delete)
+    app.get("/user/fellow",fellower.show)
+
+    //posts
+    app.get("/post/show",posts.show)
+
+    //notification
+    app.get("/notify/show",notify.get)
 }

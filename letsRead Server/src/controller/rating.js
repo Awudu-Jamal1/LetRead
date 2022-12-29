@@ -1,9 +1,17 @@
 const { Op } = require("sequelize")
-const {Rating,Book} = require("../models")
+const {Rating,Book,post} = require("../models")
 
 module.exports ={
     async ratings(req,res){
-        let rates = await Rating.create(req.body)
+        const {rate,book_id,user_id,status} = req.body
+        let rates = await Rating.create({
+            rate:rate, 
+            user_id:user_id,
+            book_id:book_id})
+        const posting = await post.create({user_id:user_id,
+            book_id:book_id,
+            status: status,
+            message:rate})
         const bookid=req.body.book_id
         console.log(bookid)
         const one = await Rating.findAndCountAll({

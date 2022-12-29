@@ -23,6 +23,9 @@ module.exports = (sequelize, DataTypes) => {
       Book.hasMany(models.Rating,{
         foreignKey:'book_id'
       })
+      Book.hasMany(models.post,{
+        foreignKey:'book_id'
+      })
     }
   }
   Book.init({

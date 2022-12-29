@@ -21,8 +21,7 @@ export default {
         async register(){
             try{
             const respond =await authenticate.register(this.Registration)
-            console.log(respond)}
-          
+            }
             catch(error){
                 this.error=error.response.data.error
                 console.log(this.error)
@@ -46,7 +45,6 @@ export default {
                             <label for="Name">Name</label>
                             <input id="iput" v-model="Registration.firstName" class="form-control">
                         </div>
-                        {{Registration.firstName}}
                     </div>
                     <div class="col-md">
                         <div class="form-group">

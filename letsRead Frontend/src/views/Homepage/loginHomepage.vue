@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid main">
         <div class="container ">
-            <div class="container intro text-center"><h3 class=" pb-3 ">Welcome   {{stores}}</h3></div>
+            <div class="container intro text-center"><h3 class=" pb-3 ">Welcome  {{ store.user }} </h3></div>
             
             <div class="px-5">
                 <div class=" px-5 row row-cols-1 row-cols-sm-2 row-cols-md-5 g-5  text-center">
@@ -38,9 +38,15 @@
 <script>
 import Rightside from '../../components/Widget/homepageWidget/rightside.vue'
 import UpdateCard from "../../components/Widget/updateCard.vue"
+import { useStore } from '../../store';
 export default {
-    setup() {},
-    components:{ UpdateCard, Rightside },props:["stores"],
+    setup() {
+        const  store =useStore()
+        return{
+            store
+        }
+    },
+    components:{ UpdateCard, Rightside },/*props:["stores"],*/
 }
 </script>
 

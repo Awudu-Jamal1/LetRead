@@ -47,7 +47,8 @@ import { useStore } from '../../store'
                     await rateAndReviews.ratings({
                         rate: Math.round(e) ,
                         book_id: bookId,
-                        user_id: this.store.user.id
+                        user_id: this.store.user.id,
+                        status:'rate'
                     })
                     
                     
