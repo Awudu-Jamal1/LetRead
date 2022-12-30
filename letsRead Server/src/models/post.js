@@ -17,6 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       post.belongsTo(models.Book,{
         foreignKey:'book_id'
       })
+      
     }
   }
   post.init({

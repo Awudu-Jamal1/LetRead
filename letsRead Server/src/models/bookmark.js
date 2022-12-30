@@ -16,6 +16,8 @@ Bookmark.belongsTo(models.Book)
     }
   }
   Bookmark.init({
+    status: DataTypes.STRING,
+    message: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Bookmark',

@@ -2,8 +2,8 @@ import Api from '@/services/Api'
 
 export default {
   show(bookmark) {
-    return Api().get("/review/readlist/show", {
-      UserId: bookmark
+    return Api().get("/review/readlist/show",{params:
+     bookmark
     })
   },
   post (listid) {

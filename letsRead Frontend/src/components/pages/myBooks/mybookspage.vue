@@ -14,8 +14,7 @@ export default {
   },
   async mounted (){
     
-    this.Books = (await Bookmarking.show(this.store.user.id)).data
-    console.log(this.Books)
+    this.Books = (await Bookmarking.show( {UserId:this.store.user.id})).data
     const nice =this.Books.filter(e =>{
       return e.Book === "Book"
       
